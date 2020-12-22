@@ -40,7 +40,6 @@ mysql_datadir: '{{ mysql_default_datadir }}'
 mysql_sql_mode: ""
 # The following variables have a default value depending on operating system. The default
 # parametr from vars/[OS-family].yml will be used
-mysql_pid_file: '{{ mysql_default_pid_file }}'
 mysql_socket: '{{ mysql_default_socket }}'
 
 mysql_service_name: "{{ mysql_default_service_name }}"

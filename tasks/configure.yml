@@ -46,7 +46,7 @@
 
     - name: Verify mysql pid directory exists
       file:
-        path: '{{ mysql_pid_file | dirname }}'
+        path: '/var/run/{{ mysql_daemon }}'
         state: directory
         owner: mysql
         group: mysql

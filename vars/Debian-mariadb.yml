@@ -15,7 +15,6 @@ mysql_default_python_packages:
 mysql_default_slow_query_log_file: /var/log/mysql-slow.log
 mysql_default_log_error: /var/log/mariadb.log
 mysql_default_syslog_tag: mariadb
-mysql_default_pid_file: /var/run/mariadb/mariadb.pid
 mysql_default_config_file: /etc/my.cnf
 mysql_default_config_include_dir: /etc/mysql/mariadb.conf.d
 mysql_default_socket: /var/run/mysqld/mysqld.sock
