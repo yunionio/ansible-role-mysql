@@ -44,6 +44,14 @@
       register: mysql_config
       notify: restart mysql
 
+    - name: Copy mysql.conf to /etc/tmpfiles.d
+      template:
+        src: mysql.conf.j2
+        dest: /etc/tmpfiles.d/mysql.conf
+        owner: root
+        group: root
+        mode: 0644
+
     - name: Verify mysql pid directory exists
       file:
         path: '/var/run/{{ mysql_daemon }}'
